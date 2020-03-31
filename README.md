@@ -6,3 +6,5 @@ The project was created to study about mobile development with React Native.
 
 - React Native
 - Hooks
+- FlexBox
+- AsyncStorage
