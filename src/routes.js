@@ -17,6 +17,14 @@ function Routes({ theme }) {
         tabBarOptions={{
           activeTintColor: `${theme.iconActive}`,
           inactiveTintColor: `${theme.iconInactive}`,
+          style: {
+            backgroundColor: `${theme.primaryBackgroundColor}`,
+            padding: 1,
+          },
+          labelStyle: {
+            fontSize: 15,
+            fontWeight: 'bold',
+          },
         }}
       >
         <Tab.Screen
@@ -25,7 +33,7 @@ function Routes({ theme }) {
           options={{
             tabBarLabel: 'Calculator',
             tabBarIcon: ({ color }) => (
-              <FontAwesome name="calculator" size={25} color={color} />
+              <FontAwesome name="calculator" size={20} color={color} />
             ),
           }}
         />
@@ -35,7 +43,7 @@ function Routes({ theme }) {
           options={{
             tabBarLabel: 'Settings',
             tabBarIcon: ({ color }) => (
-              <FontAwesome name="cog" size={25} color={color} />
+              <FontAwesome name="cog" size={20} color={color} />
             ),
           }}
         />
