@@ -12,7 +12,7 @@ export const ThemeContextProvider = ({ children }) => {
     ;(async () => {
       const storedThemeID = await AsyncStorage.getItem(STORAGE_KEY)
       if (storedThemeID) setThemeID(storedThemeID)
-      else setThemeID(THEMES[1].key)
+      else setThemeID(THEMES[0].key)
     })()
   }, [])
 
