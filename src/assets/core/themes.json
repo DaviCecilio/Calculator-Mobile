@@ -1,0 +1,38 @@
+[
+  {
+    "key": "WHITE",
+    "primaryBackgroundColor": "#ffffff",
+    "displayValue": "#333333",
+    "buttonPrimary": "#333333",
+    "buttonOperation": "#6B6B6B",
+    "buttonDanger": "#f13806",
+    "buttonEquals": "#3cb9fc",
+    "iconActive": "#28b1fa",
+    "iconInactive": "#6B6B6B",
+    "textSettings": "#333333"
+  },
+  {
+    "key": "DARK",
+    "primaryBackgroundColor": "#1E1E1E",
+    "displayValue": "#E0E0E0",
+    "buttonPrimary": "#E0E0E0",
+    "buttonOperation": "#6C696C",
+    "buttonDanger": "#cf6679",
+    "buttonEquals": "#137376",
+    "iconActive": "#137376",
+    "iconInactive": "#363636",
+    "textSettings": "#E0E0E0"
+  }, 
+  {
+    "key": "WINTER",
+    "primaryBackgroundColor": "#334555",
+    "displayValue": "#FEFEFE",
+    "buttonPrimary": "#FEFEFE",
+    "buttonOperation": "#99A7AF",
+    "buttonDanger": "#E8504D",
+    "buttonEquals": "#01152A",
+    "iconActive": "#01152A",
+    "iconInactive": "#BECEDF",
+    "textSettings": "#FEFEFE"
+  }
+]

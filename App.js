@@ -1,8 +1,11 @@
 import React from 'react'
-import Calculator from './src/pages/calculator'
+import Routes from './src/routes'
+import { ThemeContextProvider } from './src/assets/core/themeProvider'
 
-const App = () => {
-  return <Calculator />
+export default function App() {
+  return (
+    <ThemeContextProvider>
+      <Routes />
+    </ThemeContextProvider>
+  )
 }
-
-export default App

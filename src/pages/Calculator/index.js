@@ -2,11 +2,13 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { View } from 'react-native'
-import Button from '../../components/buttons'
-import Display from '../../components/display'
+import Button from '../../components/Buttons'
+import Display from '../../components/Display'
+
+import { withTheme } from '../../assets/core/themeProvider'
 import styles from './styles'
 
-export default function Calculator() {
+function Calculator({ theme }) {
   const [displayValue, setDisplayValue] = useState('0'),
     [clearDisplay, setClearDisplay] = useState(false),
     [operation, setOperation] = useState(null),
@@ -69,10 +71,15 @@ export default function Calculator() {
   }
 
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        { backgroundColor: theme.primaryBackgroundColor },
+      ]}
+    >
       <Display value={displayValue} />
       <View style={styles.containerButtons}>
-        <Button label="AC" widthButton="triple" onClick={clearMemory} />
+        <Button label="AC" typeOf="triple" onClick={clearMemory} />
         <Button label="/" operation onClick={addOperation} />
         <Button label="7" onClick={addDigit} />
         <Button label="8" onClick={addDigit} />
@@ -86,10 +93,12 @@ export default function Calculator() {
         <Button label="2" onClick={addDigit} />
         <Button label="3" onClick={addDigit} />
         <Button label="+" operation onClick={addOperation} />
-        <Button label="0" widthButton="double" onClick={addDigit} />
+        <Button label="0" typeOf="double" onClick={addDigit} />
         <Button label="." onClick={addDigit} />
-        <Button label="=" operation onClick={addOperation} />
+        <Button label="=" operation typeOf="equals" onClick={addOperation} />
       </View>
     </View>
   )
 }
+
+export default withTheme(Calculator)
