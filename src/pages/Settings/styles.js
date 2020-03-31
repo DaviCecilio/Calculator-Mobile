@@ -1,7 +1,8 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-  container: { flex: 1 },
+  container: { flex: 8 },
+
   headline: {
     marginTop: 60,
     marginBottom: 20,
@@ -9,6 +10,7 @@ export default StyleSheet.create({
     fontWeight: '200',
     fontSize: 24,
   },
+
   itemContainer: {
     height: 100,
     justifyContent: 'center',
@@ -18,5 +20,25 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: '#000000',
   },
+
   itemText: { fontWeight: 'bold' },
+
+  containerInfo: {
+    flex: 1,
+  },
+
+  contactButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+
+  containerAuthor: {
+    alignItems: 'center',
+  },
+
+  textAuthor: {
+    fontSize: 16,
+    paddingTop: 20,
+  },
 })
